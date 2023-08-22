@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/giveAwayFragment"
+        android:icon="@android:drawable/sym_action_call"
+        android:title="First" />
+    <item
+        android:id="@+id/gameFragment"
+        android:icon="@android:drawable/sym_call_missed"
+        android:title="Second" />
+    <item
+        android:id="@+id/offerFragment"
+        android:icon="@android:drawable/sym_call_incoming"
+        android:title="Third" />
+    <item
+        android:id="@+id/accountFragment"
+        android:icon="@android:drawable/sym_action_chat"
+        android:title="Fourth" />
+</menu>

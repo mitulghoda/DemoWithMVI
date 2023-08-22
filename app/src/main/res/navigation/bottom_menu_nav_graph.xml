@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_menu_nav_graph"
+    app:startDestination="@id/giveAwayFragment">
+
+    <fragment
+        android:id="@+id/giveAwayFragment"
+        android:name="com.appearnings.baseapp.ui.GiveAwayFragment"
+        android:label="fragment_give_away"
+        tools:layout="@layout/fragment_give_away">
+        <action
+            android:id="@+id/action_giveAwayFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+        <action
+            android:id="@+id/action_giveAwayFragment_to_offerFragment"
+            app:destination="@id/offerFragment" />
+        <action
+            android:id="@+id/action_giveAwayFragment_to_accountFragment"
+            app:destination="@id/accountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.appearnings.baseapp.ui.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" />
+    <fragment
+        android:id="@+id/offerFragment"
+        android:name="com.appearnings.baseapp.ui.OfferFragment"
+        android:label="fragment_offer"
+        tools:layout="@layout/fragment_offer" />
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.appearnings.baseapp.ui.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+</navigation>
