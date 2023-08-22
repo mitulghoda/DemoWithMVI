@@ -19,6 +19,10 @@
         <action
             android:id="@+id/action_giveAwayFragment_to_accountFragment"
             app:destination="@id/accountFragment" />
+        <action
+            android:id="@+id/action_giveAwayFragment_to_openBottomSheet"
+            app:destination="@id/openBottomSheet"
+            app:launchSingleTop="true" />
     </fragment>
     <fragment
         android:id="@+id/gameFragment"
@@ -35,4 +39,9 @@
         android:name="com.appearnings.baseapp.ui.AccountFragment"
         android:label="fragment_account"
         tools:layout="@layout/fragment_account" />
+    <dialog
+        android:id="@+id/openBottomSheet"
+        android:name="com.appearnings.baseapp.ui.DialogSelectService"
+        android:label="@string/open_bottomSheet"
+        tools:layout="@layout/dialog_select_service" />
 </navigation>

@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         val navView: BottomNavigationView = findViewById(R.id.bottomMenu)
         navView.setupWithNavController(navController)
         navController.addOnDestinationChangedListener { controller, destination, arguments ->
+
         }
     }
 
