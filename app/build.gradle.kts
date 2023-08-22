@@ -37,6 +37,10 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        viewBinding = true
+        dataBinding = true
+    }
 }
 
 dependencies {
@@ -56,7 +60,7 @@ dependencies {
     implementation(libs.coroutine.core)
     implementation(libs.activity.ktx)
     implementation(libs.fragment.ktx)
-    implementation(libs.androidx.baseLibrary)
+//    implementation(libs.androidx.baseLibrary)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
