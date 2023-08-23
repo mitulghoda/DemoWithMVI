@@ -2,4 +2,46 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="violet">#7101D3</color>
+    <color name="violet_700">#FF3700B3</color>
+    <color name="black_40">#66000000</color>
+    <color name="black_30">#4D000000</color>
+    <color name="black_20">#33000000</color>
+    <color name="black_10">#1A000000</color>
+    <color name="black_05">#0D000000</color>
+    <color name="black_03">#08000000</color>
+    <color name="black_50">#80000000</color>
+    <color name="black_60">#99000000</color>
+    <color name="black_80">#CC000000</color>
+    <color name="black_90">#E6000000</color>
+    <color name="white_80">#CCFFFFFF</color>
+    <color name="white_70">#B3FFFFFF</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="white_30">#4DFFFFFF</color>
+    <color name="white_20">#33FFFFFF</color>
+    <color name="white_10">#1AFFFFFF</color>
+    <color name="white_05">#0DFFFFFF</color>
+    <color name="picker_default_divider_color">@color/black_20</color>
+    <color name="promoGreyBackground_80">#80AAABAD</color>
+    <color name="error">#FF3E60</color>
+    <color name="error_night">#FF6FAF</color>
+    <color name="seekbar_virality_start">#CE0909</color>
+    <color name="seekbar_virality_center">#88049E</color>
+    <color name="seekbar_virality_end">#7000FF</color>
+    <color name="gray">#979797</color>
+    <color name="green_go">#05BC55</color>
+    <color name="warning">#EF9B0F</color>
+    <color name="blue">#1380D2</color>
+    <color name="violet_30">#4D7101D3</color>
+    <color name="placeholder">#ecf0f1</color>
+    <color name="placeholder_night">@color/white_10</color>
+    <color name="top_user_current_bg">#2D2D2D</color>
+    <color name="reward_warning">#D7CF11</color>
+    <color name="textColorSecondary">#646465</color>
+    <color name="primary_variant">#121212</color>
+    <color name="color_green_valid">#23BD59</color>
+    <color name="profile_badge_color">#23BD59</color>
+    <color name="background_popup_info_item">#191919</color>
+    <color name="rate_bar">#00A377</color>
+
 </resources>

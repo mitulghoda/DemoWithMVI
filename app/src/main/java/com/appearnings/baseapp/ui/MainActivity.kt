@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         val navController = navHostFragment.navController
         val navView: BottomNavigationView = findViewById(R.id.bottomMenu)
         navView.setupWithNavController(navController)
+
         navController.addOnDestinationChangedListener { controller, destination, arguments ->
 
         }

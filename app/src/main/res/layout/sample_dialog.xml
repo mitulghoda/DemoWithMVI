@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/bg_rounded_10_gray"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/button_close"
+        android:layout_width="@dimen/home_button_size"
+        android:layout_height="@dimen/home_button_size"
+        android:background="?actionBarItemBackground"
+        android:scaleType="center"
+        android:src="@drawable/ic_close"
+        app:layout_constraintBottom_toTopOf="@+id/rateText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="?colorOnSurface" />
+
+    <TextView
+        android:id="@+id/rateTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_vertical"
+        android:text="Give your rate"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/rateText"
+        app:layout_constraintEnd_toStartOf="@+id/button_close"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rateText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_vertical"
+        android:paddingBottom="5dp"
+        android:text="Rate me"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_close" />
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/ratingBar"
+        style="@style/RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="30dp"
+        android:isIndicator="false"
+        android:max="5"
+        android:progressTint="@color/rate_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rateText" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSubmit"
+        style="@style/Button.Outlined"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_min_size"
+        android:layout_marginVertical="@dimen/default_offset_small"
+        android:layout_marginEnd="10dp"
+        android:text="@string/submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

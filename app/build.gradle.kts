@@ -6,6 +6,7 @@ plugins {
     alias(libs.plugins.kotlinAndroid)
     alias(libs.plugins.kotlinKapt)
     alias(libs.plugins.parcelize)
+    alias(libs.plugins.navigation.safeargs)
 }
 
 android {
@@ -62,6 +63,7 @@ dependencies {
     implementation(libs.fragment.ktx)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
+    implementation(libs.protolite.well.known.types)
 //    implementation(libs.androidx.baseLibrary)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)

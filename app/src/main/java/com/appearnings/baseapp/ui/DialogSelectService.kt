@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.appearnings.baseapp.databinding.DialogSelectServiceBinding
 import com.appearnings.baseapp.databinding.RawServiceHeaderBinding
+import com.appearnings.common.BaseBottomSheetFragment
 
 class DialogSelectService :
     BaseBottomSheetFragment<DialogSelectServiceBinding>(DialogSelectServiceBinding::inflate),
@@ -35,9 +36,9 @@ class DialogSelectService :
 
     // For getting first character
     private fun getHeaderTitle(serviceList: List<ServiceList>) {
-        serviceList.sortedWith(kotlin.Comparator { list_1, list_2 ->
-            list_1.name[0].uppercase().compareTo(list_2.name[0].uppercase())
-        })
+        serviceList.sortedWith { serviceList1, list_2 ->
+            serviceList1.name[0].uppercase().compareTo(list_2.name[0].uppercase())
+        }
 
         var lastHeader = ""
         val size = serviceList.size
@@ -104,7 +105,7 @@ class DialogSelectService :
         }
 
         override fun getItemCount(): Int {
-            return mServiceList?.size!!
+            return mServiceList?.size?:0
         }
 
         override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {

@@ -1,4 +1,4 @@
-package com.appearnings.baseapp.ui
+package com.appearnings.common
 
 import android.app.Activity
 import android.content.Context

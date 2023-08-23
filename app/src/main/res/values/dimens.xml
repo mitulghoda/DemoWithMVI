@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common -->
+
+    <dimen name="button_height">64dp</dimen>
+    <dimen name="button_height_medium">56dp</dimen>
+    <dimen name="button_height_small">50dp</dimen>
+    <dimen name="button_min_size">48dp</dimen>
+    <dimen name="default_offset">16dp</dimen>
+    <dimen name="default_offset_small">8dp</dimen>
+    <dimen name="default_offset_extra_small">6dp</dimen>
+    <dimen name="default_offset_tiny">4dp</dimen>
+    <dimen name="default_offset_micro">2dp</dimen>
+    <dimen name="default_offset_min">1dp</dimen>
+    <dimen name="default_offset_medium">24dp</dimen>
+    <dimen name="default_offset_big">32dp</dimen>
+    <dimen name="default_offset_large">48dp</dimen>
+    <dimen name="default_offset_three_quarter">12dp</dimen>
+
+    <dimen name="button_corner_radius">4dp</dimen>
+    <dimen name="button_corner_radius_medium">6dp</dimen>
+    <dimen name="button_corner_radius_big">8dp</dimen>
+    <!-- -->
+
+    <!-- Home Screen -->
+    <dimen name="home_button_size">48dp</dimen>
+    <!-- -->
+
+    <dimen name="dialog_icon_size">96dp</dimen>
+    <dimen name="dialog_icon_size_min">75dp</dimen>
+    <dimen name="dialog_icon_corner_radius">10dp</dimen>
+    <dimen name="dialog_button_corner_radius">8dp</dimen>
+    <dimen name="video_item_icons_guideline">@dimen/default_offset_big</dimen>
+</resources>

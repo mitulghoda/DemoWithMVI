@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Styles for Bottom Sheet Dialog  -->
     <style name="BottomSheetDialogStyle" parent="Theme.Design.Light.BottomSheetDialog">
         <item name="android:windowSoftInputMode">adjustResize</item>
         <item name="android:windowIsFloating">false</item>
         <item name="bottomSheetStyle">@style/BottomSheetBackground</item>
     </style>
+
     <style name="BottomSheetBackground" parent="Widget.Design.BottomSheet.Modal">
         <item name="android:background">@drawable/shape_corner_top</item>
     </style>
+
+
 </resources>

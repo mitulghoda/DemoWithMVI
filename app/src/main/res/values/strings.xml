@@ -3,4 +3,9 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="open_bottomSheet">openBottomSheet</string>
+    <string name="cancel">Cancel</string>
+    <string name="general_ok">Ok</string>
+    <string name="select_date">Select date</string>
+    <string name="submit">Submi</string>
+    <string name="open_rate">Open rate</string>
 </resources>

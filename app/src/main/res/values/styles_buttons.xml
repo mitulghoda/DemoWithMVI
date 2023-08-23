@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="iconTint">?attr/colorOnPrimary</item>
+        <item name="strokeColor">?attr/colorOnPrimary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">4dp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="Button.Outlined2" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="iconTint">@color/white</item>
+        <item name="android:minHeight">32dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:elevation">0dp</item>
+        <item name="cornerRadius">3dp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="Button.IconOnly" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="iconPadding">0dp</item>
+        <item name="android:minWidth">32dp</item>
+        <item name="android:minHeight">32dp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="iconTint">@color/black</item>
+    </style>
+
+    <style name="Button" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">4dp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="ButtonRewarded" parent="Widget.MaterialComponents.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">4dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:backgroundTint">@color/color_green_valid</item>
+    </style>
+
+
+    <style name="Button.Inverted" parent="Button">
+        <item name="materialThemeOverlay">@style/Button.Inverted.ThemeOverlay</item>
+    </style>
+
+    <style name="Button.Green" parent="Button">
+        <item name="materialThemeOverlay">@style/Button.Green.ThemeOverlay</item>
+        <item name="cornerRadius">3dp</item>
+    </style>
+
+    <style name="Button.Violet" parent="Button">
+        <item name="materialThemeOverlay">@style/Button.Violet.ThemeOverlay</item>
+    </style>
+
+    <style name="Button.Stroke.Secondary" parent="Button">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="strokeColor">?android:attr/textColorSecondary</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="Button.Colored" parent="Button">
+        <item name="materialThemeOverlay">@style/Button.Colored.ThemeOverlay</item>
+    </style>
+
+    <style name="Button.Colored.ThemeOverlay">
+        <item name="colorOnSurface">@color/violet</item>
+    </style>
+
+    <style name="Button.Inverted.ThemeOverlay">
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimary">@color/white</item>
+    </style>
+
+    <style name="Button.Green.ThemeOverlay">
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimary">@color/profile_badge_color</item>
+    </style>
+
+    <style name="Button.Violet.ThemeOverlay">
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimary">#6230EE</item>
+    </style>
+
+    <style name="Button.White" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundColor">@color/white</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Button.Black">
+        <item name="android:backgroundTint">@color/black</item>
+        <item name="android:textColor">@drawable/selector_button_black_text_color</item>
+    </style>
+
+    <style name="Button.Text" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">@dimen/_4sdp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="Button.Text.50" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">@dimen/_4sdp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="alpha">0.5</item>
+    </style>
+    
+</resources>

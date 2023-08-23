@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:theme="@style/Theme.App.Night">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/default_offset_medium"
+        android:background="@drawable/bg_rounded_10_gray"
+        android:minWidth="295dp"
+        android:paddingBottom="@dimen/default_offset_medium">
+
+        <ImageView
+            android:id="@+id/button_close"
+            android:layout_width="@dimen/home_button_size"
+            android:layout_height="@dimen/home_button_size"
+            android:background="?actionBarItemBackground"
+            android:scaleType="center"
+            android:src="@drawable/ic_close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="?colorOnSurface" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/dialog_icon_size_min"
+            android:layout_height="@dimen/dialog_icon_size_min"
+            android:layout_marginTop="@dimen/default_offset"
+            android:minWidth="@dimen/dialog_icon_size_min"
+            android:minHeight="@dimen/dialog_icon_size_min"
+            android:src="@drawable/ic_congratulations"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_offset"
+            android:layout_marginTop="@dimen/default_offset"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:textColor="?colorOnSurface"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image"
+            app:layout_goneMarginTop="48dp"
+            tools:text="sasha_western" />
+
+        <TextView
+            android:id="@+id/tv_subtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_offset"
+            android:gravity="center"
+            android:textColor="?colorOnSurface"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            tools:text="You earned fist 100 points for joining app name" />
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_offset"
+            android:layout_marginTop="@dimen/default_offset_small"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_subtitle"
+            tools:text="Estimated moderation time: 48 hours. Depending on the stages of work, your status will change."
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/button_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_offset"
+            android:layout_marginTop="@dimen/default_offset_medium"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_message">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_positive"
+                style="@style/Button.Inverted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/default_offset_tiny"
+                android:layout_weight="1"
+                android:minHeight="@dimen/button_height_small"
+                android:text="@string/general_ok"
+                app:cornerRadius="@dimen/dialog_button_corner_radius" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_negative_text"
+                style="@style/Button.Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/default_offset_tiny"
+                android:layout_weight="1"
+                android:minHeight="@dimen/button_height_small"
+                android:text="@string/cancel"
+                android:visibility="gone"
+                app:cornerRadius="@dimen/dialog_button_corner_radius"
+                tools:visibility="visible" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_negative_outlined"
+                style="@style/Button.Outlined2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/default_offset_tiny"
+                android:layout_weight="1"
+                android:minHeight="@dimen/button_height_small"
+                android:text="@string/cancel"
+                android:visibility="gone"
+                app:cornerRadius="@dimen/dialog_button_corner_radius"
+                app:strokeColor="@color/white"
+                tools:visibility="visible" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
