@@ -18,8 +18,8 @@ class RateAppDialog : BaseBottomSheetDialogFragment(R.layout.sample_dialog) {
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         val dialog = super.onCreateDialog(savedInstanceState)
-        dialog.setCanceledOnTouchOutside(false)
-        isCancelable = false
+        dialog.setCanceledOnTouchOutside(true)
+        isCancelable = true
         return dialog
     }
 
